@@ -3,7 +3,7 @@
 import { useState } from "react"
 import GetRecipe from "@/components/GetRecipe";
 
-export default function page() {
+export default function Page() {
   const [inputClicked, setInputClicked] = useState(false);
   const [userMeal, setUserMeal] = useState("");
 
