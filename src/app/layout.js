@@ -27,13 +27,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   const header = (
-    <header className={`mt-4 mx-24 ${rowdiesBold.className}`}>
-      <Link href="/"><h1 className="text-2xl font-bold text-black">BonAfiyet</h1></Link>
+    <header>
+      <section className="max-w-4xl mx-auto p-4 flex justify-between items-center">
+        <Link href="/"><h1 className={`${rowdiesBold.className} text-2xl font-bold text-black`}>BonAfiyet</h1></Link>
+        <Link href="/recipe" className="text-xl font-semibold hover:opacity-70">Recipe Page</Link>
+      </section>
     </header>
   )
 
   const footer = (
-    <footer className="border-t mx-24 py-4 mt-8 flex justify-center text-sm text-slate-400">
+    <footer className=" mx-24 py-4 mt-8 flex justify-center text-sm text-slate-400">
       Made with 🩷 by Sümeyye Sever
     </footer>
   )
@@ -42,7 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`min-h-screen ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {header}
         {children}
