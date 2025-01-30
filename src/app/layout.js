@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   )
 
   const footer = (
-    <footer className=" mx-24 py-4 mt-8 flex justify-center text-sm text-slate-400">
+    <footer className="mx-24 py-4 mt-8 flex justify-center text-sm text-slate-400">
       Made with 🩷 by Sümeyye Sever
     </footer>
   )
